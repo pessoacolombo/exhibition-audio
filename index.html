@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urbanisms of the Health Industry — Interviews</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:        #FFFFFF;
+      --border:    #C0001A;
+      --ink:       #1B2A6B;
+      --ink-muted: #4A5A9A;
+      --accent:    #C0001A;
+      --accent-lt: #E8001F;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--ink); font-family: 'DM Mono', monospace; min-height: 100vh; }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 3rem 2rem 2rem;
+      position: relative;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-lt), transparent);
+    }
+    .header-inner { max-width: 640px; margin: 0 auto; }
+    .exhibition-label { font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 1.2rem; }
+    h1 { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(2.2rem, 6vw, 3.6rem); line-height: 1.05; color: var(--ink); margin-bottom: 0.8rem; }
+    h1 em { font-style: italic; color: var(--accent-lt); }
+    .header-desc { font-size: 0.65rem; line-height: 1.7; color: var(--ink-muted); letter-spacing: 0.03em; }
+
+    main { max-width: 640px; margin: 0 auto; padding: 2.5rem 2rem 5rem; }
+    .section-label { font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 1.2rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+
+    .list { display: flex; flex-direction: column; }
+    .list-item {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      padding: 1.3rem 0;
+      border-bottom: 1px solid var(--border);
+      text-decoration: none;
+      color: inherit;
+    }
+    .list-item:first-child { border-top: 1px solid var(--border); }
+    .list-num { font-size: 0.58rem; color: var(--ink-muted); min-width: 1.8rem; flex-shrink: 0; letter-spacing: 0.08em; }
+    .list-name { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 400; flex: 1; transition: color 0.15s; }
+    .list-item:hover .list-name { color: var(--accent); }
+    .list-arrow { font-size: 0.65rem; color: var(--ink-muted); transition: transform 0.15s, color 0.15s; }
+    .list-item:hover .list-arrow { transform: translateX(3px); color: var(--accent); }
+
+    footer { border-top: 1px solid var(--border); padding: 1.25rem 2rem; max-width: 640px; margin: 0 auto; font-size: 0.58rem; color: var(--ink-muted); letter-spacing: 0.05em; display: flex; justify-content: space-between; }
+    @media (max-width: 480px) {
+      header { padding: 2rem 1.25rem 1.5rem; }
+      main { padding: 2rem 1.25rem 4rem; }
+      footer { padding: 1rem 1.25rem; flex-direction: column; gap: 0.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <p class="exhibition-label">Exhibition · Audio Archive</p>
+    <h1>Urbanisms of the<br><em>Health Industry</em></h1>
+    <p class="header-desc">Seven interviews with architects, planners, and researchers on the pharmaceutical campuses of Roche and Novartis — Basel, 2025.</p>
+  </div>
+</header>
+
+<main>
+  <p class="section-label">Seven Interviews</p>
+  <nav class="list">
+    <a class="list-item" href="interview-01.html">
+      <span class="list-num">01</span>
+      <span class="list-name">Christian Getsy</span>
+      <span class="list-arrow">→</span>
+    </a>
+    <a class="list-item" href="interview-02.html">
+      <span class="list-num">02</span>
+      <span class="list-name">Christian Helm</span>
+      <span class="list-arrow">→</span>
+    </a>
+    <a class="list-item" href="interview-03.html">
+      <span class="list-num">03</span>
+      <span class="list-name">Daniel Riechmut</span>
+      <span class="list-arrow">→</span>
+    </a>
+    <a class="list-item" href="interview-04.html">
+      <span class="list-num">04</span>
+      <span class="list-name">Domenico Bellanova</span>
+      <span class="list-arrow">→</span>
+    </a>
+    <a class="list-item" href="interview-05.html">
+      <span class="list-num">05</span>
+      <span class="list-name">Felix Waldmeier</span>
+      <span class="list-arrow">→</span>
+    </a>
+    <a class="list-item" href="interview-06.html">
+      <span class="list-num">06</span>
+      <span class="list-name">Meinrad Probst</span>
+      <span class="list-arrow">→</span>
+    </a>
+    <a class="list-item" href="interview-07.html">
+      <span class="list-num">07</span>
+      <span class="list-name">Tony Huor</span>
+      <span class="list-arrow">→</span>
+    </a>
+  </nav>
+</main>
+
+<footer>
+  <span>MA Critical Urbanism · University of Basel · 2025</span>
+  <span>Audio hosted on SWITCHdrive</span>
+</footer>
+
+</body>
+</html>
